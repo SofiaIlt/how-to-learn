@@ -15,26 +15,25 @@
   max-height: 756px;
   background-color: #f2f2f2;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 
 }
 
 .logo {
-  position: absolute;
   width: 228px;
   height: 32px;
 }
 
 .logo_place_header {
+  position: absolute;
   top: 30px;
   left: 64px;
   z-index: 2;
 }
 
 .header_title {
-  position: absolute;
-  left: 64px;
+  margin-left: 64px;
   width: 730px;
   font-size: 102px;
   font-weight: 700px;
@@ -234,19 +233,21 @@
 
 .feynman {
   background-color: #f2f2f2;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: left 0 bottom 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
   height: 890px;
+  flex-direction: column;
 }
 
 .feynman_title{
-  margin: 0;
-  align-items: center;
-  position: absolute;
+  margin: 100px 0 0;
+  padding: 0;
   text-align: center;
-  top: 100px;
   width: 648px;
   z-index: 1;
   line-height: 1.15;
@@ -255,7 +256,7 @@
 }
 
 .feynman_subtitle {
-  position: absolute;
+  margin-top: 70px;
   z-index: 1;
   line-height: 51px;
   font-size: 36px;
@@ -264,6 +265,7 @@
 
 .feynman_link {
   position: absolute;
+  top: 50%;
   right: 48px;
   text-decoration: none;
   color: #2f80ed;
@@ -271,14 +273,6 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-}
-
-.feynman_img {
-  position: absolute;
-  width: 867px;
-  height: 637px;
-  left: 0;
-  bottom: 0;
 }
 
 .footer {
@@ -293,6 +287,7 @@
 
 .footer_columns {
   position: relative;
+  justify-content: space-between;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -300,31 +295,23 @@
   min-height: 200px;
 }
 
-.column-info_and_column-solial {
-  display: relative;
-  justify-content: space-between;
-}
-
 .footer_column-copyright {
   display: flex;
   width: 50%;
-}
-
-.logo_place_footer {
-  position: absolute;
-  top: 0;
-  left: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 .footer_author {
-  position: absolute;
-  margin: 0;
-  margin-top: 18px;
-  left: 0;
-  bottom: 18px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 18px 0;
 }
 
 .footer_column-heading {
@@ -336,21 +323,13 @@
 }
 
 .footer_column-info {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-left: 910px;
   padding: 0;
 }
 
 .footer_column-social {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
   margin: 0;
   padding: 0;
 }
